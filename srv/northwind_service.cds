@@ -1,8 +1,8 @@
-using {API_BUSINESS_PARTNER as businessPartner} from './external/API_BUSINESS_PARTNER.csn';
+using {northwind} from './external/northwind.csn';
 
-service BusinessPartnerService {
+service NorthwindService {
     @readonly
-    entity BusinessPartners as projection on businessPartner.A_BusinessPartner {
-        key BusinessPartner as id, FirstName as firstName, LastName as lastName, BusinessPartnerIsBlocked as blocked
+    entity Products as projection on northwind.Products {
+        key ProductID as id, ProductName as name, UnitPrice as unitPrice, UnitsInStock as stock, Discontinued as discontinued
     }
 }
