@@ -46,10 +46,6 @@
       "db": {
         "kind": "sql"
       },
-      "API_BUSINESS_PARTNER": {
-        "kind": "odata-v2",
-        "model": "srv/external/API_BUSINESS_PARTNER"
-      },
       "northwind": {
         "kind": "odata-v2",
         "model": "srv/external/northwind"
