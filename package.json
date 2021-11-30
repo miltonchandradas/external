@@ -10,49 +10,18 @@
     "express": "^4",
     "hdb": "^0.18.3"
   },
-  "devDependencies": {
-    "sqlite3": "^5.0.2"
-  },
   "scripts": {
     "start": "cds run"
   },
-  "eslintConfig": {
-    "extends": "eslint:recommended",
-    "env": {
-      "es2020": true,
-      "node": true,
-      "jest": true,
-      "mocha": true
-    },
-    "globals": {
-      "SELECT": true,
-      "INSERT": true,
-      "UPDATE": true,
-      "DELETE": true,
-      "CREATE": true,
-      "DROP": true,
-      "CDL": true,
-      "CQL": true,
-      "CXL": true,
-      "cds": true
-    },
-    "rules": {
-      "no-console": "off",
-      "require-atomic-updates": "off"
-    }
-  },
   "cds": {
     "requires": {
-      "db": {
-        "kind": "sql"
-      },
-      "northwind": {
+      "Northwind": {
         "kind": "odata-v2",
-        "model": "srv/external/northwind"
+        "model": "srv/external/northwind",
+        "credentials": {
+          "destination": "northwind"
+        }
       }
-    },
-    "hana": {
-      "deploy-format": "hdbtable"
     }
   }
 }

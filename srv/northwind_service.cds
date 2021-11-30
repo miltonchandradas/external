@@ -1,8 +1,6 @@
-using {northwind} from './external/northwind.csn';
+using {Northwind} from './external/Northwind.csn';
 
 service NorthwindService {
     @readonly
-    entity Products as projection on northwind.Products {
-        key ProductID as id, ProductName as name, UnitPrice as unitPrice, UnitsInStock as stock, Discontinued as discontinued
-    }
+    entity Products as projection on Northwind.Products;
 }
