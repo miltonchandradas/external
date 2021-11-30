@@ -17,7 +17,7 @@
     "requires": {
       "Northwind": {
         "kind": "odata-v2",
-        "model": "srv/external/northwind",
+        "model": "srv/external/Northwind",
         "credentials": {
           "destination": "northwind"
         }
