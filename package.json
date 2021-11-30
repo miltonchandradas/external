@@ -43,16 +43,10 @@
   },
   "cds": {
     "requires": {
-      "db": {
-        "kind": "sql"
-      },
-      "northwind": {
+      "Northwind": {
         "kind": "odata-v2",
-        "model": "srv/external/northwind"
+        "model": "srv/external/Northwind"
       }
-    },
-    "hana": {
-      "deploy-format": "hdbtable"
     }
   }
 }
